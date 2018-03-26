@@ -10,7 +10,7 @@ Amida Test
 
 ### Setup
 
-Right after finishing, I had a phone call with Jacob, in which he said just passing along the github repo link, rather than zipping the contents, was just fine.  This requires a slight instructions change.
+Right after finishing, I had a phone call with Jacob, in which he said just passing along the github repo link, rather than zipping the contents, was just fine.  This requires a slight instructions change, as reflected below...
 
 ```
 git clone git@github.com:mountHouli/amida-test.git
