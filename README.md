@@ -4,6 +4,8 @@ Amida Test
 
 ## Notes
 
+- NOTE: Though Ellen sent the link to https://github.com/amida-tech/homework in her email to me on March 23rd, in order to fully respect the 2 hour time limit, I did not look at that repo until starting the coding test tday (March 26th) at 11:00 am.
+
 - This server uses `async/await` without babel.  Therefore, you must use a Node version that supports `async/await`.  For example, during development, Node v9.8.0 was used.
 
 ## How-to
