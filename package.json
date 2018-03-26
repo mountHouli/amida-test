@@ -1,9 +1,9 @@
 {
-  "name": "little-express-boilerplate",
+  "name": "admida-test",
   "version": "0.0.1",
-  "description": "Just a little express boilerplate.",
+  "description": "Amida Test",
   "author": "Aaron Houlihan",
-  "repository": "github.com:mounthouli/little-express-boilerplate",
+  "repository": "github.com:mounthouli/admida-test",
   "license": "ISC",
   "scripts": {
     "lint": "eslint \"src/**\" \"test/**\"; exit 0;",
