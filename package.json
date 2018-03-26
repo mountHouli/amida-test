@@ -6,6 +6,7 @@
   "repository": "github.com:mounthouli/admida-test",
   "license": "ISC",
   "scripts": {
+    "etl": "node src/etl.js",
     "lint": "eslint \"src/**\" \"test/**\"; exit 0;",
     "start": "nodemon src/app.js",
     "test": "concurrently --kill-others \"node src/app.js\" \"sleep 3 && mocha\""
