@@ -6,7 +6,11 @@ const reg = /--------------------------------\nDemographic\n\n------------------
 const filename = path.resolve(__dirname, '..', 'input/cms_sample.txt')
 
 fs.readFile(filename, 'utf8', (err, fileContents) => {
-  const matches = reg.exec(fileContents)
+  return processData(fileContents)
+})
+
+function processData (input) {
+  const matches = reg.exec(input)
 
   const data = {
     name: {
@@ -38,4 +42,4 @@ fs.readFile(filename, 'utf8', (err, fileContents) => {
   console.log(JSON.stringify(data, null, 2))
 
   return JSON.stringify(data, null, 2)
-})
+}

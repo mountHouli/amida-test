@@ -42,3 +42,16 @@ To run the test suite against the server
 ```
 npm run test
 ```
+
+### Part 3 (almost complate)
+
+```
+npm start
+```
+
+- Navigate to http://localhost:4000
+- Click "Choose File"
+- Browse to this repo, to the `input/` dir, and select `cms_sample.txt`
+- Click "Upload File"
+- This will create a file called `output/post.not_converted_to_json`
+- Please see comment in `src/router.js`
