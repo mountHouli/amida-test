@@ -10,8 +10,10 @@ Amida Test
 
 ### Setup
 
+Right after finishing, I had a phone call with Jacob, in which he said just passing along the github repo link, rather than zipping the contents, was just fine.  This requires a slight instructions change.
+
 ```
-unzip the contents
+git clone git@github.com:mountHouli/amida-test.git
 
 cd amida-test
 
@@ -36,6 +38,8 @@ To start the server in dev mode (using nodemon rather than node)
 
 ```
 npm start
+
+// Then browse to http://localhost:4000/api/sample
 ```
 
 To run the test suite against the server
