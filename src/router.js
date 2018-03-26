@@ -1,27 +1,23 @@
-const express = require('express')
+const fs = require('fs')
+const path = require('path')
 
-const fetch = require('./fetch.js')
+const express = require('express')
 
 const router = express.Router()
 
-router.get('/', async (req, res, next) => {
-  if (!req.query.the_required_param) {
-    return res.status(400).json({
-      error: 'You must specify the "the_required_param=SOME_VALUE" search parameter'
-    })
-  }
+const filename = path.resolve(__dirname, '..', 'example/sample.json')
 
-  try {
-    const result = await fetch(req.query.the_required_param)
+router.get('/api/sample', async (req, res, next) => {
+  fs.readFile(filename, 'utf8', (err, data) => {
+    const response = {
+      data: JSON.parse(data),
+      metadata: {
+        generated: Date.now()
+      }
+    }
 
-    return res.send({
-      error: null,
-      data: result.data.data
-    })
-  }
-  catch (err) {
-    next(err)
-  }
+    res.json(response)
+  })
 })
 
 module.exports = router
